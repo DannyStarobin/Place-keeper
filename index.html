@@ -5,26 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/homepage.style.css">
+    <link rel="stylesheet" href="css/homepage-style.css">
     <title>Place-keeper Home-page</title>
 </head>
 
-<body>
+<body class="home-body" onload="onInit()">
     <header>
         <div class="header-container">
             <h1 class="header-title">Place keeper</h1>
         </div>
     </header>
 
+    <div class="home-modal">
+        <h2>Hi dear explorer</h2>
+        <h3>Find your way back to your best places</h3>
+    </div>
 
-    <main>
+    <main class="home-main">
+        <div class="buttons">
 
-        <button>map</button>
-        <button> <a href="user-prefs.html"></a> user</button>
-        <img class="main-img" src="img/O9FG400.jpg" alt="">
+            <button><a href="map.html">map</a></button>
+            <button> <a href="user-prefs.html">user</a></button>
+        </div>
+        <img class="main-img" src="img/2.png" alt="">
 
     </main>
 
+    <article class="astro">
+
+    </article>
 
 
 
@@ -34,7 +43,8 @@
     <script src="js/utilService.js"></script>
     <script src="js/storageService.js"></script>
     <script src="js/userPrefService.js"></script>
-    <script src="js/placeService.js"></script>
+    <script src="js/indexServices.js"></script>
+    <script src="js/home page-controller.js"></script>
 </body>
 
 </html>

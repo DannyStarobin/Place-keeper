@@ -6,10 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/user-pref-style.css">
 </head>
 
+<header>
+    <div class="header-container">
+        <h1 class="header-title">User preferences</h1>
+    </div>
+</header>
+
 <body>
+    <form onsubmit="onFormSend(event)">
+        <label for="bcgColor">Choose your homepage background color:</label><br>
+        <input type="color" name="bcgColor" required/><br>
+        <hr>
+        <label for="fontColor">Choose your Homepage font color:</label><br>
+        <input type="color" name="fontColor" required/><br>
+        <hr>
+        <label for="birthDate">Enter your birth date :</label><br>
+        <input type="date" name="birthDate" required/><br>
+        <hr>
+        <label for="birthTime">Enter your birth time :</label><br>
+        <input type="time" name="birthTime" required/><br>
+        <hr>
+        <label for="email">Enter your email :</label><br>
+        <input type="email" name="email" required/><br>
+        <hr>
+        <label for="age">Choose your age :</label><br>
+        <input type="range" id="age" name="age" min="18" max="120" value="26" onchange="showAge(this.value);" required/>
+        <span id="sAge">26</span>
+        <hr>
+
+        <button>Go</button>
+    </form>
 
 </body>
+<script src="js/utilService.js"></script>
+<script src="js/storageService.js"></script>
+<script src="js/userPrefService.js"></script>
+<script src="js/placeService.js"></script>
+<script src="js/indexServices.js"></script>
+<script src="js/home page-controller.js"></script>
+<script src="js/user prefs-controller.js"></script>
 
 </html>
